@@ -50,6 +50,16 @@ html {
   
 }
 
+@media screen and (max-width: 1024px) {
+    .list-icon .user-icon,
+    .glass-icon,
+    .input, 
+    .glass-input,
+    .menu-list .list-item {
+        display: none;
+    }
+}
+    
 .btn {
     padding: 12px 20 px;
     border: none;
@@ -65,6 +75,7 @@ html {
 .input {
     padding: 12px 20px;
     border-radius: 35px;
+    border: none;
     box-shadow: #6b7487 rgba(0, 0, 0, 0,9);
 }
 
@@ -158,8 +169,30 @@ html {
 .row-list-item {
     display: flex;
     margin: 2rem;
+}
+
+
+@media screen and (max-width: 808px) {
+.row-list-item {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 808px) {
+    .row-media {
+        display: flex;
+        flex-wrap: wrap;
+    }
     
-   
+}
+
+@media screen and (max-width: 742px) {
+    .row-box {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 .row-icon {
@@ -234,6 +267,15 @@ html {
 
 }
 
+@media screen and (max-width: 1011px) {
+    .box-mouse-pad {
+        display: none;
+        
+    }
+    
+}
+
+
 .box-first:hover::after {
     width: 120%;
 }
@@ -304,10 +346,218 @@ html {
 .row-discover {
     text-align: center;
     margin-top: 4rem;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 48px;
+    font-weight: 400;
 }
 
 .purple {
     color: #8938fc;
+}
+
+.row-list {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 600;
+    color: #494F66;
+    list-style-type: none;
+    cursor: pointer;
+
+}
+
+.row-list-item-title {
+    display: flex;
+    margin: 1rem;
+}
+
+.btn-all {
+    border: none;
+    background-color: white;
+    color: #8938fc;
+    cursor: pointer;
+}
+
+.all {
+    border-bottom:  2px solid #8938fc;
+}
+
+.btn-large,
+.btn-business,
+.btn-booklet {
+    border: none;
+    color: #494F66;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-large:hover,
+.btn-business:hover,
+.btn-booklet:hover {
+    color: #8938fc;
+    border-bottom: 2px solid #8938fc;
+}
+
+.box-row {
+    display: flex;
+    width: 80%;
+    gap: 2rem;
+    margin: auto;
+    margin-top: 3rem;
+    height: 320px;
+}
+
+.circle {
+    background-color: gray;
+    box-shadow: 5px, 5px, 10px rgba(0, 0, 0, 0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 0.2rem;
+}
+
+.box-text {
+    text-align: center;
+    
+
+}
+
+.h3-box {
+    color: #494F66;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.h3-box:hover {
+    color: #8938fc;
+}
+
+.btn-personalize {
+    border: none;
+    padding: 15px 80px;
+    border-radius: 35px;
+    margin-top: 2rem;
+    visibility: hidden;
+    cursor: pointer;
+    transition: all 0.2s;
+
+}
+
+.box-text:hover .btn-personalize {
+    color: white;
+    background-color: black;
+    visibility: visible;
+}
+
+.content-deals {
+    display: flex;
+    background-color: #edeef1;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    margin-top: 10rem;
+}
+
+.img-deals {
+    display: inline-block;
+    width: 69px;
+    height: 44px;
+    margin-left: 3rem;
+}
+
+.col-deals {
+    margin-left: 6rem;
+}
+
+.best-deals {
+    margin-bottom: 2rem;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.circle-number {
+    display: flex;
+    
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 5px, 5px, 10px rgba(0, 0, 0, 0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 0.5rem;
+    margin-top: 1rem;
+}
+
+.best {
+    color: #8938fc;
+    margin-bottom: 3rem;
+}
+
+.best-hot {
+    margin-bottom: 2rem;
+    font-size: 20px;
+    font-weight: 600;
+    color: #8938fc;
+}
+
+.col-circle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.circle-text {
+   margin: 1rem;
+   margin-top: 1rem;
+}
+
+
+.circle-text-span {
+    margin: 0.7rem;
+}
+
+.btn-shop-now {
+    padding: 20px 50px;
+    border-radius: 35px;
+    border: none;
+    background-color: #8938fc;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+    .content-deals {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+.row-best {
+    text-align: center;
+    margin-top: 12rem;
+}
+
+.row-best h2 {
+    font-size: 48px;
+    font-weight: 500;
+
+}
+
+.row-best p {
+    color: #6b7487;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 2rem;
 }
